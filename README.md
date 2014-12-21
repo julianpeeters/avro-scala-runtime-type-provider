@@ -95,6 +95,7 @@ Supports generating case classes with arbitrary fields of the following datatype
 
 3) Full test coverage.
 
+4) Maybe have the generated case classes compatible with Avro's SpecificRecord API (but why, since there already exists the GenericRecord API which eschews type safety in more expectable manner?).
 
 ###Fork away, just make sure the tests pass. Criticism is appreciated.
 
