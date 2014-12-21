@@ -91,6 +91,7 @@ Supports generating case classes with arbitrary fields of the following datatype
 
 2) Support for generating case classes directly from Schema objects passed via rpc. 
 
+3) Full test coverage.
 
 
 
