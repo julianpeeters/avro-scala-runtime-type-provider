@@ -1,7 +1,8 @@
 avro-scala-runtime-type-provider
 ================================
 
-Uses [Case-Class-Generator](https://github.com/julianpeeters/case-class-generator) and data found in Avro schemas to define and load Scala case classes at runtime.
+Defines and loads Scala case classes at runtime based on data found in Avro schemas.
+
 
 The dynamically generated class can serve as as a type parameter, or be used to reflectively instantiate new objects at runtime. Please see warnings below.
 
