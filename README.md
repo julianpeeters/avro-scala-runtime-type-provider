@@ -80,9 +80,11 @@ Supports generating case classes with arbitrary fields of the following datatype
 
 1) Reflection circumvents type-saftey. If you find yourself here, please consider if you truly need to define classes at runtime. For example, a file that is accessed at runtime is often *also* accessible at compile-time, and therefore is candidate for a [Avro-Scala-Macro-Annotations](https://github.com/julianpeeters/avro-scala-macro-annotations), which is type-safe.
 
-2) If you only need a single class per Schema/package, please see [scala-avro-toolbox-type-provider](https://github.com/julianpeeters/scala-avro-toolbox-type-provider) for a tool that uses the official (yet still experimental) way to generate classes at runtime. Keep an eye on [scala.meta])(http://scalameta.org/) to solve the single-class-per-package issue.
+2) This was developed with the intention of providing a type parameter to Scalavro and Salat-Avro, which use case classes to represent Avro records. Any other utility is incidental.
 
-3) ObjectWeb's ASM classwriter, and thus this project, is _not_ thread-safe.
+3) If you only need a single class per Schema/package, please see [scala-avro-toolbox-type-provider](https://github.com/julianpeeters/scala-avro-toolbox-type-provider) for a tool that uses the official (yet still experimental) way to generate classes at runtime. Keep an eye on [scala.meta])(http://scalameta.org/) to solve the single-class-per-package issue.
+
+4) ObjectWeb's ASM classwriter, and thus this project, is _not_ thread-safe.
 
 
 ##In the Future:
@@ -92,7 +94,6 @@ Supports generating case classes with arbitrary fields of the following datatype
 2) Support for generating case classes directly from Schema objects passed via rpc. 
 
 3) Full test coverage.
-
 
 
 ###Fork away, just make sure the tests pass. Criticism is appreciated.
