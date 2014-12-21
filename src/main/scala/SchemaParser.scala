@@ -46,8 +46,8 @@ object SchemaParser {
       }
     }
 
-    val flatSchema = fieldSchemas.flatMap(fieldSchema => flattenSchema(fieldSchema))
-    val nestedRecordSchemas = flatSchema.filter(x => x.getType == RECORD)
+    val flatSchemas = fieldSchemas.flatMap(fieldSchema => flattenSchema(fieldSchema))
+    val nestedRecordSchemas = flatSchemas.filter(x => x.getType == RECORD)
 
     nestedRecordSchemas
   }
